@@ -542,3 +542,141 @@ body {
 .contactBox a:hover {
   color: #facc15;
 }
+/* ---------- MOBILE FIX ---------- */
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    position: relative;
+    width: 100%;
+    padding: 22px 18px;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .logo {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .navLinks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .navLinks a {
+    font-size: 15px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 70px 22px 80px;
+  }
+
+  .heroContent {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .smallIntro {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .heroText {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 220px;
+    text-align: center;
+  }
+
+  .section {
+    width: 100%;
+    max-width: 100%;
+    padding: 70px 22px;
+  }
+
+  .section h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .sectionLabel {
+    text-align: center;
+  }
+
+  .section p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .projectCard {
+    width: 100%;
+    padding: 28px 22px;
+    text-align: center;
+  }
+
+  .projectCard h3 {
+    font-size: 26px;
+    line-height: 1.1;
+  }
+
+  .projectDescription {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .techList {
+    justify-content: center;
+  }
+
+  .projectCard ul {
+    text-align: left;
+    padding-left: 24px;
+  }
+
+  .projectCard li {
+    text-align: left;
+  }
+
+  .skillsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contactBox {
+    padding: 24px 20px;
+  }
+
+  .contactBox p {
+    text-align: left;
+    font-size: 16px;
+    word-break: break-word;
+  }
+}
